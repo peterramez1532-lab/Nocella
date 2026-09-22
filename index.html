@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff1eb">
+  <title>Nocella Chocolates — Sweet Moments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="choco-drip drip-top"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Nocella home">
+      <img src="assets/nocella-logo.jpeg" alt="Nocella Chocolates logo">
+    </a>
+
+    <nav class="desktop-nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#collections">Collections</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button aria-label="Search" class="icon-btn" id="searchBtn">⌕</button>
+      <button aria-label="Account" class="icon-btn">♙</button>
+      <button aria-label="Cart" class="cart-btn" id="cartBtn">🛒<span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Premium Chocolates <i>♥</i></span>
+        <h1>Sweet Moments,<br><span>Made with love</span> ♥</h1>
+        <p>At Nocella, we believe chocolate is more than just a treat... it's a feeling. Crafted with the finest ingredients, we bring you moments of pure happiness in every bite.</p>
+        <a href="#shop" class="primary-btn">Shop Now <span>→</span></a>
+
+        <div class="trust-row">
+          <div><b>♧</b><span>Premium<br>Ingredients</span></div>
+          <div><b>♡</b><span>Handcrafted<br>with Love</span></div>
+          <div><b>▱</b><span>Fast &amp; Safe<br>Delivery</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="floating-heart h1">♥</div>
+        <div class="floating-heart h2">♡</div>
+        <div class="logo-orb">
+          <img src="assets/nocella-logo.jpeg" alt="Nocella">
+        </div>
+        <div class="bar bar-one"><span></span><span></span><span></span><span></span></div>
+        <div class="bar bar-two"><span></span><span></span><span></span><span></span></div>
+        <div class="truffle truffle-a"></div>
+        <div class="truffle truffle-b"></div>
+        <div class="truffle truffle-c"></div>
+        <div class="chocolate-pool"></div>
+        <div class="drip drip-a"></div>
+        <div class="drip drip-b"></div>
+        <div class="drip drip-c"></div>
+      </div>
+    </section>
+
+    <section class="category-strip" id="collections">
+      <article class="category chocolate-card">
+        <div class="mini-bars"><i></i><i></i><i></i></div>
+        <div><h3>Chocolate Bars</h3><p>Rich flavor. Premium ingredients.</p></div>
+        <a href="#shop">Explore →</a>
+      </article>
+      <article class="category gift-card">
+        <div class="gift-box">N</div>
+        <div><h3>Gift Boxes</h3><p>Perfect for every special moment.</p></div>
+        <a href="#shop">Explore →</a>
+      </article>
+      <article class="category truffle-card">
+        <div class="mini-truffles"><i></i><i></i><i></i></div>
+        <div><h3>Truffles</h3><p>Small bites. Big happiness.</p></div>
+        <a href="#shop">Explore →</a>
+      </article>
+    </section>
+
+    <section class="best-sellers" id="shop">
+      <div class="section-intro">
+        <span class="eyebrow">Most Loved ♥</span>
+        <h2>Best Sellers</h2>
+        <p>Our most popular chocolates, loved by everyone. Once you try them, you'll understand why.</p>
+        <button class="secondary-btn" id="viewAllBtn">View All →</button>
+      </div>
+
+      <div class="products" id="productGrid">
+        <article class="product" data-name="Classic Chocolate Bar" data-price="4.99">
+          <div class="badge">Bestseller</div>
+          <div class="product-image image-one">
+            <div class="fake-bar"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="product-info">
+            <h3>Classic Chocolate Bar</h3>
+            <div class="stars">★★★★★ <small>(82)</small></div>
+            <strong>$4.99</strong>
+            <button class="add-btn">+</button>
+          </div>
+        </article>
+
+        <article class="product" data-name="Signature Gift Box" data-price="24.99">
+          <div class="badge pink">Best Value</div>
+          <div class="product-image image-two">
+            <div class="gift-product"><span>N</span></div>
+          </div>
+          <div class="product-info">
+            <h3>Signature Gift Box</h3>
+            <div class="stars">★★★★★ <small>(69)</small></div>
+            <strong>$24.99</strong>
+            <button class="add-btn">+</button>
+          </div>
+        </article>
+
+        <article class="product" data-name="Assorted Truffles" data-price="16.99">
+          <div class="badge">Popular</div>
+          <div class="product-image image-three">
+            <div class="truffle-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="product-info">
+            <h3>Assorted Truffles</h3>
+            <div class="stars">★★★★★ <small>(76)</small></div>
+            <strong>$16.99</strong>
+            <button class="add-btn">+</button>
+          </div>
+        </article>
+
+        <article class="product" data-name="Strawberry Bliss Bar" data-price="5.99">
+          <div class="badge pink">New</div>
+          <div class="product-image image-four">
+            <div class="strawberry-bars"><i></i><i></i><i></i></div>
+          </div>
+          <div class="product-info">
+            <h3>Strawberry Bliss Bar</h3>
+            <div class="stars">★★★★★ <small>(62)</small></div>
+            <strong>$5.99</strong>
+            <button class="add-btn">+</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story" id="about">
+      <div class="story-orb">
+        <div class="giant-truffle"></div>
+        <div class="story-hearts">♥ ♥</div>
+      </div>
+      <div class="story-copy">
+        <span class="eyebrow">Our Story ♥</span>
+        <h2>More Than Just Chocolate</h2>
+        <p>Nocella was born from a simple belief — that life is sweeter when shared. We create handcrafted chocolates using the finest ingredients, because every bite should feel like a hug.</p>
+        <button class="primary-btn" id="storyBtn">Discover Our Story →</button>
+      </div>
+      <div class="story-note">Small bites.<br><b>Big happiness.</b></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-brand">
+      <img src="assets/nocella-logo.jpeg" alt="Nocella logo">
+    </div>
+    <div class="footer-links">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#collections">Collections</a><a href="#contact">Contact</a>
+    </div>
+    <div class="socials"><span>◎</span><span>f</span><span>♪</span><span>p</span></div>
+    <form class="newsletter" id="newsletter">
+      <label>Join our chocolate family</label>
+      <div><input type="email" placeholder="Your email address" required><button>→</button></div>
+    </form>
+    <small>© 2026 Nocella Chocolates. All rights reserved.</small>
+  </footer>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button id="closeMenu">×</button>
+    <a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#collections">Collections</a><a href="#contact">Contact</a>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
